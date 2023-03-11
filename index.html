@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/paper.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="container">
+            <div class="holder d-flex align-items-center justify-content-between">
+                <ul>
+                    <li>rock</li>
+                    <li>paper</li>
+                    <li>scissors</li>
+                    <li>lizard</li>
+                    <li>spock</li>
+                </ul>
+                <div class="scores d-flex flex-wrap justify-content-center align-items-center text-center">
+                    <span class="score d-block w-100">score</span>
+                    <span class="num d-block w-100">0</span>
+                </div>
+            </div>
+            <div class="shapes ">
+                <img data-img="images/icon-lizard.svg" class="lizard" src="images/icon-lizard.svg" alt="">
+                <span class="position-absolute lizardspan"></span>
+
+                <img data-img="images/icon-spock.svg" class="spock" src="images/icon-spock.svg" alt="">
+                <span class="position-absolute spockspan"></span>
+
+                <img data-img="images/icon-scissors.svg" class="scissors" src="images/icon-scissors.svg" alt="">
+                <span class="position-absolute scissorsspan"></span>
+
+                <img data-img="images/icon-paper.svg" class="paper" src="images/icon-paper.svg" alt="">
+                <span class="position-absolute paperspan"></span>
+
+                <img data-img="images/icon-rock.svg" class="rock" src="images/icon-rock.svg" alt="">
+                <span class="position-absolute rockspan"></span>
+            </div>
+            <div class="picked hide">
+                <div class="you">
+                    <h2>you picked</h2>
+                    <img class="clickedImg" src="images/icon-scissors.svg" alt="">
+                </div>
+                <div class="wonOrLost">
+                    <div class="span won">you won</div>
+                    <div class="span playAgain mb-3">play again</div>
+                </div>
+                <div class="house">
+                    <h2>the house picked</h2>
+                    <img class="houseImg" src="images/icon-scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="rules">rules</div>
+            <div class="inst position-absolute hide">
+                <i class="clos fa-solid fa-close mb-3"></i>
+                <p class=" instructions  ">
+                    If you win, you gain 1 point. If the computer wins, you lose one point. <br>
+                    - Scissors beats Paper <br>
+                    - Paper beats Rock <br>
+                    - Rock beats Lizard <br>
+                    - Lizard beats Spock <br>
+                    - Spock beats Scissors <br>
+                    - Scissors beats Lizard <br>
+                    - Paper beats Spock <br>
+                    - Rock beats Scissors <br>
+                    - Lizard beats Paper <br>
+                    - Spock beats Rock
+                </p>
+                <img src="images/image-rules-bonus.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/paper.js"></script>
+</body>
+
+</html>
